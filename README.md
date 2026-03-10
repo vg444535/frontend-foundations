@@ -1,3 +1,3 @@
 # frontend-foundations
-my-first-web-project
+my-first-web-project.
 Author-Vipul Gupta
