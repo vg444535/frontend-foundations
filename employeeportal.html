@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Portal</title>
+    <link rel="icon" href="huge (1).png">
+    <style>
+        .navitem{
+            display:inline;
+            padding:85px;
+        }
+        .navitem a{
+            text-decoration: none;
+            color:pink;
+        }
+        .registerform{
+            width:max-content;
+            /* text-align: center; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: wheat;
+            border-collapse: collapse;
+        }
+        .employeetable{
+           text-align: center;
+        }
+        th,td{
+            border:1px solid black;
+            padding: 10px;
+        }
+        #contact-us{
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: lightskyblue; margin: 0px; padding: 0px;">
+    <header style="background-color: darkcyan; padding: 2px; margin: 0px; text-align: center;">
+       <h1>Welcome to Company HR portal</h1>
+       <nav>
+        <!-- nav bar link the website with section in same page -->
+          <ul>
+            <li class="navitem"><a href="#employee-registration">Employee-Registration</a></li>
+            <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+            <li class="navitem"><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+    </header>
+    <image src="huge (1).png" width="1520px" height="500px"></image>
+    <section id="employee-registration" class="registerform">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to register as <em>Employee</em></p>
+        <form>
+            <label for="name">write your name:</label>
+            <input type="text" id="name" placeholder="wrtie your full name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email"><br><br>
+            <label for="password">set your password:</label>
+            <input type="password" id="password" placeholder="enter password"><br><br>
+            <label for="age">AGE:</label>
+            <input type="number" id="age" ><br><br>
+            <label for="dob">Enter your D.O.B:</label>
+            <input type="date" id="dob" ><br><br>
+            <label for="gender">Select your Gender:</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br><br>
+            <label for="role">Select role:</label>
+            <select>
+                <option>Software Engineer</option>
+                <option>Product Manager</option>
+                <option>Designer</option>
+                <option>HR representative</option>
+            </select><br><br>
+            <input type="submit">
+        </form>
+    </section>
+    <section id="employee-directory" class="employeetable">
+        <h3>Employee Directory</h3>
+        <p>list of all registerd employee</p>
+        <table>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>234</td>
+                <td>Vipul Gupta</td>
+                <td>software Engineer</td>
+            </tr>
+            <tr>
+                <td>235</td>
+                <td>Rudra</td>
+                <td>Designeer</td>
+            </tr>
+            <tr>
+                <td>236</td>
+                <td>Ayush Agarwal</td>
+                <td>Product manager</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact-us">
+        <h4>Contact-us</h4>
+        <p>you can contact us at company@official.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8041691281655!2d77.69918457793983!3d12.984373754668924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176568fa49e7%3A0xc14ffe9b3aa1a72f!2sMicrosoft%20Luxor%20North%20Tower!5e0!3m2!1sen!2sin!4v1775242197293!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer style="background-color: darkcyan; padding:2px; text-align: center;">
+        <p>&copy; 203Company Name</p>
+    </footer>
+</body>
+</html>
